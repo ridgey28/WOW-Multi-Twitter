@@ -29,13 +29,15 @@ Unzip and copy the folder twitter and all it’s contents to your server.
 
 On the page you want to display your twitter feed(s) load the class
 
-```php
+<pre><code>
   include_once 'twitter/includes/wow-multi-twitter.php';
-```
+</code></pre>
 
 <h2>Adding Keys and Tokens</h2>
+
 Adding your Keys and Tokens to an array
-```PHP
+
+<pre><code>
 //User 1
 $consKey = '';//Add your Twitter Consumer Key here
 $consSec = '';//Add your Twitter Consumer Secret here
@@ -48,21 +50,19 @@ $consSec2 = '';//Add your Twitter Consumer Secret here
 $usrToken2 = '';//Add your Twitter User Token here
 $usrSec2 ='';//Add your Twitter User Secret here
 
-
 //Creates an array of the above keys for each user
 $user1 = array($consKey,$consSec,$usrToken,$usrSec);
 $user2 = array($consKey2,$consSec2,$usrToken2,$usrSec2);
-```
+</code></pre>
 
 <h2>Create a new instance of MultiTwitter</h2>
-```PHP
-$twitter = new MultiTwitter();
 
-```
+<pre><code>$twitter = new MultiTwitter();</code></pre>
 
 <h2>Optional - Options</h2>
 If no options are set then it will use the defaults detailed in the methods and properties section below. If you only set a few it will automatically use those from the defaults.
-```php
+
+<pre><code>
 //Sets custom options
 $options = array('maxTweets'=> 25,
  'caching_intervals' => 10,
@@ -71,20 +71,21 @@ $options = array('maxTweets'=> 25,
 );
 
 $twitter->setOptions($options);
-```
+</code></pre>
 
 <h2>Set Users</h2>
 Add our username and the key array we created earlier
-```PHP
+<pre><code>
 //Sets the user. If you only want one user just use setUser1
 $twitter->setUser1('username1',$user1);
 $twitter->setUser2('username2',$user2);
+</code></pre>
 
-```
 <h2>Displaying the Tweets</h2>
-```php
+<pre><code>
   echo $twitter->displayTweets();
-```
+</code></pre>
+
 <h2>Methods and Properties</h2>
 
 <h4>setUser1($username,$keys);</h4>
@@ -112,7 +113,7 @@ Configure your own options
 (Array) Optional
 
 *Default*
-```php
+<pre><code>
   $defaults = array('maxTweets'=> 20,
                   'style'=>'time_since',
                   'include_retweets' => false,
@@ -120,7 +121,7 @@ Configure your own options
                   'caching_intervals' => 60,
                   'display_images' => true
                   );
-```
+</code></pre>
 **maxTweets- Default 20 (int)**
 How many tweets you want to fetch from the Twitter Server per account.
 
