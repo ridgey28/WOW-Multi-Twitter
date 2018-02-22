@@ -128,13 +128,14 @@ How many tweets you want to fetch from the Twitter Server per account.
 **style- default ‘time_since’ (string)**
 Displays the date or time since format.
 The arguments are:
-
-  *‘eng_suff’ – Displays 21st February*
-  *‘ddmm’ – Displays 21 Feb*
-  *‘ddmmyy’ – Displays 21 Feb 2018*
-  *‘full_date’ – Displays Wed 21 Feb 2018*
-  *‘time_since’ – Displays the time since the tweet in hours, minutes etc.*
-  *‘month’ – Displays February 21, 2018*
+<ul>
+  <li>*‘eng_suff’ – Displays 21st February*</li>
+  <li>*‘ddmm’ – Displays 21 Feb*</li>
+  <li>*‘ddmmyy’ – Displays 21 Feb 2018*</li>
+  <li>*‘full_date’ – Displays Wed 21 Feb 2018*</li>
+  <li>*‘time_since’ – Displays the time since the tweet in hours, minutes etc.*</li>
+  <li>*‘month’ – Displays February 21, 2018*</li>
+ </ul>
 
 **include_retweets- default false(bool)**
 Do you want to include any retweets?
@@ -148,8 +149,7 @@ How often in minutes do you want to cache the JSON request?
 **display_images- default true(bool)**
 Images are enabled by default but may not show on all tweets. You can optionally disable them.
 
-
 <h4>displayTweets();</h4>
 Output(echo) your twitter feed(s) for the world to see.
 
-Further options including CSS styling are available on my blog:  https://www.worldoweb.co.uk/2018/wow-multi-twitter-2-0-reloaded-php-class
+<p>Further options including CSS styling are available on my blog:  https://www.worldoweb.co.uk/2018/wow-multi-twitter-2-0-reloaded-php-class</p>
